@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c885f370-ec4f-4427-8d54-a6a4a756bf9c" name="变更" comment="111">
+      <change beforePath="$PROJECT_DIR$/../book-manage/NovelNook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book-manage/vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../book-manage/vue.rar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
+        <option name="userSettingsFile" value="C:\Users\111\.m2\setting.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2GqJOJGHEfqIAV5R6u84RSUas7o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "H:/hui/回回的文件/Cmanagement/mysql-connector-j-8.0.33.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "spring.configuration.checksum": "7d61983c34edc2a8cabbea71c4732f62",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Java\managementSys\Cmanagement\Community\src\main\resources\static" />
+      <recent name="G:\Java\managementSys\Cmanagement\Community\src\main\resources\static\css\fonts" />
+      <recent name="G:\Java\managementSys\Cmanagement\Community\src\main\resources\static\css" />
+      <recent name="G:\Java\managementSys\Cmanagement\Community\src\main\resources\static\js" />
+      <recent name="G:\Java\managementSys\Cmanagement\Community\src\main\java\com\manage\community\domain" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CommunityApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Community" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.manage.community.CommunityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c885f370-ec4f-4427-8d54-a6a4a756bf9c" name="变更" comment="" />
+      <created>1667110149076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667110149076</updated>
+      <workItem from="1667110151106" duration="892000" />
+      <workItem from="1667111058422" duration="299000" />
+      <workItem from="1667111369768" duration="1131000" />
+      <workItem from="1667112523063" duration="138000" />
+      <workItem from="1667112673949" duration="6383000" />
+      <workItem from="1667126014505" duration="2362000" />
+      <workItem from="1667128413354" duration="601000" />
+      <workItem from="1667129034341" duration="465000" />
+      <workItem from="1667129516609" duration="220000" />
+      <workItem from="1667129814539" duration="190000" />
+      <workItem from="1667130034734" duration="279000" />
+      <workItem from="1667130339764" duration="414000" />
+      <workItem from="1667141327532" duration="202000" />
+      <workItem from="1667197101388" duration="1442000" />
+      <workItem from="1667198666998" duration="4685000" />
+      <workItem from="1667204123680" duration="5830000" />
+      <workItem from="1667217254324" duration="5092000" />
+      <workItem from="1667225242327" duration="142000" />
+      <workItem from="1667290436901" duration="18688000" />
+      <workItem from="1667486558429" duration="662000" />
+      <workItem from="1667535584792" duration="91000" />
+      <workItem from="1667535808737" duration="1090000" />
+      <workItem from="1667536925715" duration="126000" />
+      <workItem from="1667537113203" duration="7073000" />
+      <workItem from="1667566196475" duration="861000" />
+      <workItem from="1667735796376" duration="4113000" />
+      <workItem from="1668679354156" duration="3527000" />
+      <workItem from="1668690704628" duration="5663000" />
+      <workItem from="1668745567387" duration="15108000" />
+      <workItem from="1668840021635" duration="11603000" />
+      <workItem from="1669560344477" duration="4965000" />
+      <workItem from="1669645361763" duration="1133000" />
+      <workItem from="1672927840319" duration="690000" />
+      <workItem from="1673017346347" duration="171000" />
+      <workItem from="1676780175102" duration="25760000" />
+      <workItem from="1679939787530" duration="1000" />
+      <workItem from="1679940679987" duration="811000" />
+      <workItem from="1681580516982" duration="805000" />
+      <workItem from="1684485763376" duration="692000" />
+      <workItem from="1685541889001" duration="2187000" />
+      <workItem from="1685631647241" duration="1454000" />
+      <workItem from="1685790065156" duration="937000" />
+      <workItem from="1685791032193" duration="30000" />
+      <workItem from="1685791081532" duration="152000" />
+      <workItem from="1685791288338" duration="46000" />
+      <workItem from="1685791418595" duration="219000" />
+      <workItem from="1685791965575" duration="29000" />
+      <workItem from="1685792008102" duration="537000" />
+      <workItem from="1685792562428" duration="369000" />
+      <workItem from="1685792956966" duration="5720000" />
+    </task>
+    <task id="LOCAL-00001" summary="111">
+      <created>1669615601153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669615601153</updated>
+    </task>
+    <task id="LOCAL-00002" summary="111">
+      <created>1669615909352</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669615909352</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="111" />
+    <option name="LAST_COMMIT_MESSAGE" value="111" />
+  </component>
+</project>

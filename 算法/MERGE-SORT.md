@@ -1,3 +1,7 @@
+# 算法第一次上机
+
+#### 闫一慧20009200331
+
 ## MERGE-SORT
 
 归并排序是一种经典的分治算法，用于对数组进行排序。它的基本思想是将数组递归地划分为较小的子数组，然后将这些子数组进行合并，最终得到一个有序的数组。
@@ -143,6 +147,191 @@ void insertionSort(int arr[], int n) {
 
 结果展示：
 
-![image-20230530201110299](C:\Users\111\AppData\Roaming\Typora\typora-user-images\image-20230530201110299.png)
+<img src="C:\Users\111\AppData\Roaming\Typora\typora-user-images\image-20230530201110299.png" alt="image-20230530201110299" style="zoom: 67%;" />
 
 插入排序是一个原地排序算法，它的时间复杂度为**O(n^2)**，其中n是数组的长度。尽管在最坏情况下的时间复杂度较高，但对于小规模的数组或基本有序的数组，插入排序表现良好，并且它是稳定的排序算法，不会改变相等元素的相对顺序。
+
+## QUICK-SORT
+
+快速排序是一种高效的排序算法，它基于分治策略。它的核心思想是选择一个主元（pivot），然后将数组划分为两个子数组，一个小于等于主元的子数组，一个大于主元的子数组。然后对这两个子数组分别递归地应用快速排序算法，直到子数组的长度为1或0，即已经有序。
+
+<img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c7f7547100284d3bb0b1f184e7749a8f~tplv-k3u1fbpfcp-zoom-crop-mark:1512:1512:1512:851.awebp?" alt="快速排序算法的基本思想是什么？快速排序算法的实现和优化" style="zoom: 25%;" />
+
+以下是用C语言实现的快速排序算法：
+
+```c
+#include <stdio.h>
+
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+  
+    for (int j = low; j <= high - 1; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return i + 1;
+}
+
+void quicksort(int arr[], int low, int high) {
+    if (low < high) {
+        int pivotIndex = partition(arr, low, high);
+        quicksort(arr, low, pivotIndex - 1);
+        quicksort(arr, pivotIndex + 1, high);
+    }
+}
+
+int main() {
+    int arr[] = {10, 7, 8, 9, 1, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+  
+    quicksort(arr, 0, n - 1);
+  
+    printf("Sorted array: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+  
+    return 0;
+}
+```
+
+这段代码首先定义了一个用于交换两个元素的辅助函数`swap`，然后实现了`partition`函数来进行划分操作。`partition`函数选择最后一个元素作为主元，并将数组划分为两个子数组。接下来，`quicksort`函数使用递归来对子数组进行排序。最后，在`main`函数中，我们创建一个示例数组并调用`quicksort`函数对其进行排序，然后打印排序后的结果。
+
+运行结果如下：
+
+![image-20230605162837893](C:\Users\111\AppData\Roaming\Typora\typora-user-images\image-20230605162837893.png)
+
+1) How many comparisons will Quicksort do on a list of *n* elements that all have the same value?
+
+列表中的所有元素都相同的情况下，Quicksort仍然会执行n * (n-1) / 2次比较。这是因为选择主元和划分步骤将始终将数组分成大小为n-1和0的两个子数组。因此，在这种情况下，比较次数的递归关系是T(n) = T(n-1) + (n-1)，解得**T(n) = n * (n-1) / 2**。
+
+2.   What are the maximum and minimum number of comparisons will Quicksort do on a list of *n* elements, give an instance for maximum and minimum case respectively.
+
+在最大情况下，主元总是选择子数组中的最大或最小元素。这种情况可能发生在数组已按升序或降序排序的情况下。在这种情况下，Quicksort每个递归层级将执行n-1次比较，总共进行**n * (n-1) / 2**次比较。
+
+例如，如果我们有数组[1, 2, 3, 4, 5]，最大比较次数将是10（n * (n-1) / 2 = 5 * 4 / 2 = 10）。
+
+在最小情况下，主元被选择为将数组分成两个大小相等的子数组的位置。这可能发生在数组以某种平衡方式完全平衡的情况下。在这种情况下，Quicksort每个递归层级将执行log₂(n)次比较，总共进行**n * log₂(n)**次比较。
+
+例如，如果我们有数组[5, 2, 8, 1, 7, 3]，最小比较次数将是9（n * log₂(n) = 6 * log₂(6) ≈ 9）。
+
+## Priority Queue
+
+以下是一个用c语言实现优先队列的示例：
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int priority;
+    // 可根据需要添加其他数据成员
+} Element;
+
+typedef struct {
+    Element* elements;
+    int capacity;
+    int size;
+} PriorityQueue;
+
+PriorityQueue* createPriorityQueue(int capacity) {
+    PriorityQueue* queue = (PriorityQueue*)malloc(sizeof(PriorityQueue));
+    queue->capacity = capacity;
+    queue->size = 0;
+    queue->elements = (Element*)malloc(capacity * sizeof(Element));
+    return queue;
+}
+
+void destroyPriorityQueue(PriorityQueue* queue) {
+    free(queue->elements);
+    free(queue);
+}
+
+void enqueue(PriorityQueue* queue, Element element) {
+    if (queue->size >= queue->capacity) {
+        printf("Error: Priority queue is full.\n");
+        return;
+    }
+
+    int i = queue->size - 1;
+    while (i >= 0 && queue->elements[i].priority > element.priority) {
+        queue->elements[i + 1] = queue->elements[i];
+        i--;
+    }
+    queue->elements[i + 1] = element;
+    queue->size++;
+}
+
+Element dequeue(PriorityQueue* queue) {
+    if (queue->size <= 0) {
+        printf("Error: Priority queue is empty.\n");
+        Element emptyElement = {0}; // 返回一个空元素作为错误处理
+        return emptyElement;
+    }
+
+    Element element = queue->elements[0];
+    for (int i = 1; i < queue->size; i++) {
+        queue->elements[i - 1] = queue->elements[i];
+    }
+    queue->size--;
+    return element;
+}
+
+int main() {
+    PriorityQueue* queue = createPriorityQueue(5);
+
+    Element e1 = {3};
+    enqueue(queue, e1);
+
+    Element e2 = {1};
+    enqueue(queue, e2);
+
+    Element e3 = {5};
+    enqueue(queue, e3);
+
+    Element e4 = {2};
+    enqueue(queue, e4);
+
+    Element e5 = {4};
+    enqueue(queue, e5);
+
+    printf("Dequeuing elements from the priority queue:\n");
+    while (queue->size > 0) {
+        Element element = dequeue(queue);
+        printf("Priority: %d\n", element.priority);
+    }
+
+    destroyPriorityQueue(queue);
+
+    return 0;
+}
+
+```
+
+程序运行结果如下：
+
+<img src="C:\Users\111\AppData\Roaming\Typora\typora-user-images\image-20230605163603388.png" alt="image-20230605163603388" style="zoom:50%;" />
+
+在这个示例中，我们定义了`Element`结构来表示优先级队列中的元素，它只包含一个`priority`成员，但你可以根据需要添加其他数据成员。
+
+`PriorityQueue`结构表示优先级队列本身，其中包含一个`elements`数组用于存储元素，`capacity`表示队列的最大容量，`size`表示队列当前的大小。
+
+`createPriorityQueue`函数用于创建一个具有给定容量的优先级队列，并返回指向该队列的指针。
+
+`destroyPriorityQueue`函数用于销毁优先级队列，释放内存。
+
+`enqueue`函数用于将元素插入到优先级队列中，根据优先级进行插入排序。
+
+`dequeue`函数用于从优先级队列中移除并返回具有最高优先级的元素。
+
+在`main`函数中，我们创建了一个优先队列并进行了一系列的`enqueue`操作来插入元素。然后，我们使用`dequeue`函数逐个移除并打印队列中的元素，直到队列为空。
